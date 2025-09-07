@@ -1,10 +1,12 @@
 #  File: Consanguinity.gpr.py
+from gramps.version import major_version
+
 register(GRAMPLET,
          id="Consanguinity",
          name=_("Consanguinity"),
          description = _("Gramplet showing pedigree collapse and spousal consanguinity."),
          version="1.0.0",
-         gramps_target_version="5.2",
+         gramps_target_version=major_version,
          status = STABLE,
          fname="consanguinity.py",
          height = 50,
